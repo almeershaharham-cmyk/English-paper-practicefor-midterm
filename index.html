@@ -1,0 +1,1402 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>English Mid-Term Practice Test 2026</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:white;
+    padding:35px 20px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+header h1{
+    margin:0;
+    font-size:30px;
+    font-weight:800;
+}
+
+header h2{
+    margin:8px 0;
+    color:white;
+    border:0;
+    padding:0;
+}
+
+header p{
+    margin:5px 0;
+    color:#eff6ff;
+}
+
+.container{
+    width:min(1000px,94%);
+    margin:30px auto;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #dbe4f0;
+    border-radius:14px;
+    padding:25px;
+    margin-bottom:22px;
+    box-shadow:0 5px 18px rgba(30,60,100,.08);
+}
+
+h2{
+    color:#1d4ed8;
+    margin-top:0;
+    border-bottom:2px solid #dbeafe;
+    padding-bottom:10px;
+}
+
+h3{
+    color:#2563eb;
+}
+
+.question{
+    margin-bottom:28px;
+}
+
+label{
+    font-weight:600;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin-top:7px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #cbd5e1;
+    background:#fff;
+    color:#172033;
+    font-size:15px;
+    font-family:inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    border-color:#3b82f6;
+    box-shadow:0 0 0 3px #dbeafe;
+}
+
+textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+.option{
+    display:block;
+    background:#f8fafc;
+    padding:12px;
+    margin:8px 0;
+    border-radius:9px;
+    border:1px solid #dbe4f0;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.option:hover{
+    background:#eff6ff;
+    border-color:#93c5fd;
+}
+
+.option input{
+    width:auto;
+    margin-right:8px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:9px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-1px);
+}
+
+.submit-area{
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    background:#fff;
+}
+
+th,
+td{
+    border:1px solid #cbd5e1;
+    padding:10px;
+}
+
+th{
+    background:#dbeafe;
+    color:#1e3a8a;
+}
+
+blockquote{
+    margin:15px 0;
+    background:#f8fafc;
+    border-left:4px solid #3b82f6;
+    padding:15px 18px;
+    color:#334155;
+    line-height:1.8;
+}
+
+.feedback{
+    display:none;
+    margin-top:8px;
+    padding:10px;
+    border-radius:7px;
+}
+
+.correct{
+    display:block;
+    background:#dcfce7;
+    color:#166534;
+    border:1px solid #86efac;
+}
+
+.wrong{
+    display:block;
+    background:#fee2e2;
+    color:#991b1b;
+    border:1px solid #fca5a5;
+}
+
+.warning{
+    display:block;
+    background:#fef3c7;
+    color:#92400e;
+    border:1px solid #fcd34d;
+}
+
+.result{
+    display:none;
+    text-align:center;
+}
+
+.score{
+    font-size:52px;
+    font-weight:bold;
+    color:#2563eb;
+    margin:15px 0;
+}
+
+.result-box{
+    background:#eff6ff;
+    border:1px solid #bfdbfe;
+    border-radius:12px;
+    padding:20px;
+    margin:20px 0;
+}
+
+.progress{
+    position:fixed;
+    top:0;
+    left:0;
+    height:4px;
+    background:#2563eb;
+    width:0%;
+    z-index:999;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+    font-size:14px;
+}
+
+@media(max-width:650px){
+
+    header h1{
+        font-size:23px;
+    }
+
+    header h2{
+        font-size:18px;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    .card{
+        padding:17px;
+    }
+
+    table{
+        font-size:12px;
+    }
+
+    th,
+    td{
+        padding:7px;
+    }
+
+    button{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header>
+    <h1>ENGLISH MID-TERM PRACTICE TEST</h1>
+    <h2>2026</h2>
+    <p><b>Students Edition</b></p>
+    <p>Class 8</p>
+</header>
+
+<div class="container">
+
+<form id="examForm">
+
+<!-- STUDENT INFORMATION -->
+
+<div class="card">
+
+<h2>Student Information</h2>
+
+<label>Student Name</label>
+<input type="text" id="studentName" placeholder="Enter your name" required>
+
+<label>Class</label>
+<input type="text" value="8" readonly>
+
+<label>Section</label>
+<input type="text" id="section" placeholder="Enter section">
+
+<label>Date</label>
+<input type="date" id="date">
+
+</div>
+
+
+<!-- Q1 -->
+
+<div class="card">
+
+<h2>Q1. Synonyms & Sentence Making</h2>
+
+<p>
+Write the synonym of each word and use the word in your own meaningful sentence.
+</p>
+
+<div class="question">
+<b>1. Concocting</b>
+
+<input id="syn1" placeholder="Write the synonym">
+
+<textarea id="sentence1"
+placeholder="Make your own sentence using the word..."></textarea>
+
+<div id="fb1" class="feedback"></div>
+</div>
+
+
+<div class="question">
+<b>2. Reverently</b>
+
+<input id="syn2" placeholder="Write the synonym">
+
+<textarea id="sentence2"
+placeholder="Make your own sentence using the word..."></textarea>
+
+<div id="fb2" class="feedback"></div>
+</div>
+
+
+<div class="question">
+<b>3. Outsmart</b>
+
+<input id="syn3" placeholder="Write the synonym">
+
+<textarea id="sentence3"
+placeholder="Make your own sentence using the word..."></textarea>
+
+<div id="fb3" class="feedback"></div>
+</div>
+
+
+<div class="question">
+<b>4. Hindrance</b>
+
+<input id="syn4" placeholder="Write the synonym">
+
+<textarea id="sentence4"
+placeholder="Make your own sentence using the word..."></textarea>
+
+<div id="fb4" class="feedback"></div>
+</div>
+
+
+<div class="question">
+<b>5. Demise</b>
+
+<input id="syn5" placeholder="Write the synonym">
+
+<textarea id="sentence5"
+placeholder="Make your own sentence using the word..."></textarea>
+
+<div id="fb5" class="feedback"></div>
+</div>
+
+</div>
+
+
+<!-- Q2 -->
+
+<div class="card">
+
+<h2>Q2. Antonyms in Context</h2>
+
+<p>
+Write the antonym of the <b>bold</b> word.
+</p>
+
+<div class="question">
+<p>1. His <b>conviction</b> remained strong despite the difficulties.</p>
+<input id="ant1" placeholder="Write the antonym">
+</div>
+
+<div class="question">
+<p>2. The teacher praised her instead of <b>reproaching</b> her.</p>
+<input id="ant2" placeholder="Write the antonym">
+</div>
+
+<div class="question">
+<p>3. The soldiers showed <b>courage</b> during the difficult situation.</p>
+<input id="ant3" placeholder="Write the antonym">
+</div>
+
+<div class="question">
+<p>4. The room was <b>huddled</b> with people during the meeting.</p>
+<input id="ant4" placeholder="Write the antonym">
+</div>
+
+<div class="question">
+<p>5. The news brought <b>thrilled</b> reactions from the students.</p>
+<input id="ant5" placeholder="Write the antonym">
+</div>
+
+</div>
+
+
+<!-- Q3 -->
+
+<div class="card">
+
+<h2>Q3. Metaphors / Figurative Language</h2>
+
+<p>
+Write the <b>literal meaning</b> and <b>figurative meaning</b> of any 5.
+</p>
+
+<div class="question">
+<b>1. Big fat lies</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+<div class="question">
+<b>2. Smattering of truth</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+<div class="question">
+<b>3. Huddled over</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+<div class="question">
+<b>4. Make a par with</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+<div class="question">
+<b>5. Flooded with questions</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+<div class="question">
+<b>6. Sizzle in class</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+<div class="question">
+<b>7. Shattering silence</b>
+<textarea placeholder="Literal meaning"></textarea>
+<textarea placeholder="Figurative meaning"></textarea>
+</div>
+
+</div>
+
+
+<!-- Q4 -->
+
+<div class="card">
+
+<h2>Q4. Choose the Correct Word Form</h2>
+
+<div class="question">
+
+<p>1. The teacher praised his ______.</p>
+
+<label class="option">
+<input type="radio" name="q4_1" value="a">
+intelligent
+</label>
+
+<label class="option">
+<input type="radio" name="q4_1" value="b">
+intelligence
+</label>
+
+<label class="option">
+<input type="radio" name="q4_1" value="c">
+intelligently
+</label>
+
+</div>
+
+
+<div class="question">
+
+<p>2. The magician performed the trick ______.</p>
+
+<label class="option">
+<input type="radio" name="q4_2" value="a">
+skillful
+</label>
+
+<label class="option">
+<input type="radio" name="q4_2" value="b">
+skill
+</label>
+
+<label class="option">
+<input type="radio" name="q4_2" value="c">
+skillfully
+</label>
+
+</div>
+
+
+<div class="question">
+
+<p>3. His ______ made everyone admire him.</p>
+
+<label class="option">
+<input type="radio" name="q4_3" value="a">
+courageous
+</label>
+
+<label class="option">
+<input type="radio" name="q4_3" value="b">
+courage
+</label>
+
+<label class="option">
+<input type="radio" name="q4_3" value="c">
+courageously
+</label>
+
+</div>
+
+
+<div class="question">
+
+<p>4. She gave a clear ______ of the incident.</p>
+
+<label class="option">
+<input type="radio" name="q4_4" value="a">
+explain
+</label>
+
+<label class="option">
+<input type="radio" name="q4_4" value="b">
+explanation
+</label>
+
+<label class="option">
+<input type="radio" name="q4_4" value="c">
+explanatory
+</label>
+
+</div>
+
+
+<div class="question">
+
+<p>5. The students listened ______ to the teacher.</p>
+
+<label class="option">
+<input type="radio" name="q4_5" value="a">
+attentive
+</label>
+
+<label class="option">
+<input type="radio" name="q4_5" value="b">
+attention
+</label>
+
+<label class="option">
+<input type="radio" name="q4_5" value="c">
+attentively
+</label>
+
+</div>
+
+
+<div class="question">
+
+<p>6. The decision was very ______.</p>
+
+<label class="option">
+<input type="radio" name="q4_6" value="a">
+wisely
+</label>
+
+<label class="option">
+<input type="radio" name="q4_6" value="b">
+wisdom
+</label>
+
+<label class="option">
+<input type="radio" name="q4_6" value="c">
+wise
+</label>
+
+</div>
+
+
+<div class="question">
+
+<p>7. His ______ surprised everyone.</p>
+
+<label class="option">
+<input type="radio" name="q4_7" value="a">
+generous
+</label>
+
+<label class="option">
+<input type="radio" name="q4_7" value="b">
+generosity
+</label>
+
+<label class="option">
+<input type="radio" name="q4_7" value="c">
+generously
+</label>
+
+</div>
+
+</div>
+
+
+<!-- Q5 -->
+
+<div class="card">
+
+<h2>Q5. Word Forms</h2>
+
+<table>
+
+<tr>
+<th>Word</th>
+<th>Adjective</th>
+<th>Noun</th>
+<th>Verb</th>
+<th>Adverb</th>
+</tr>
+
+<tr>
+<td>Intelligent</td>
+<td><input></td>
+<td><input></td>
+<td>—</td>
+<td><input></td>
+</tr>
+
+<tr>
+<td>Assure</td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+</tr>
+
+<tr>
+<td>Elate</td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+</tr>
+
+<tr>
+<td>Ignore</td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+</tr>
+
+<tr>
+<td>Establish</td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- Q6 -->
+
+<div class="card">
+
+<h2>Q6. Central Idea</h2>
+
+<p>
+Choose <b>ONE</b> topic and write its central idea.
+</p>
+
+<label class="option">
+<input type="radio" name="centralChoice" value="windows">
+Windows to the Soul
+</label>
+
+<label class="option">
+<input type="radio" name="centralChoice" value="parents">
+Parents Make Decisions
+</label>
+
+<textarea
+id="centralIdea"
+placeholder="Write your central idea here. Keep it within 5 lines."
+></textarea>
+
+<div id="centralFeedback" class="feedback"></div>
+
+</div>
+
+
+<!-- Q7 -->
+
+<div class="card">
+
+<h2>Q7. HOT Question</h2>
+
+<p>
+In the light of the ongoing struggle in Palestine for justice and peace,
+how can the leadership qualities of <b>Yousuf bin Tashfin</b> be relevant
+to today's world?
+</p>
+
+<textarea placeholder="Write your answer..."></textarea>
+
+</div>
+
+
+<!-- Q8 -->
+
+<div class="card">
+
+<h2>Q8. Classification of Sentences</h2>
+
+<p>
+Classify each sentence as <b>Assertive, Interrogative, Imperative,
+or Exclamatory</b>.
+</p>
+
+<select id="q8_1">
+<option value="">1. What a wonderful performance it was!</option>
+<option value="Assertive">Assertive</option>
+<option value="Interrogative">Interrogative</option>
+<option value="Imperative">Imperative</option>
+<option value="Exclamatory">Exclamatory</option>
+</select>
+
+<select id="q8_2">
+<option value="">2. Please close the door.</option>
+<option value="Assertive">Assertive</option>
+<option value="Interrogative">Interrogative</option>
+<option value="Imperative">Imperative</option>
+<option value="Exclamatory">Exclamatory</option>
+</select>
+
+<select id="q8_3">
+<option value="">3. Did you complete your homework?</option>
+<option value="Assertive">Assertive</option>
+<option value="Interrogative">Interrogative</option>
+<option value="Imperative">Imperative</option>
+<option value="Exclamatory">Exclamatory</option>
+</select>
+
+<select id="q8_4">
+<option value="">4. The students are preparing for their examination.</option>
+<option value="Assertive">Assertive</option>
+<option value="Interrogative">Interrogative</option>
+<option value="Imperative">Imperative</option>
+<option value="Exclamatory">Exclamatory</option>
+</select>
+
+<select id="q8_5">
+<option value="">5. How beautiful the garden is!</option>
+<option value="Assertive">Assertive</option>
+<option value="Interrogative">Interrogative</option>
+<option value="Imperative">Imperative</option>
+<option value="Exclamatory">Exclamatory</option>
+</select>
+
+</div>
+
+
+<!-- Q9 -->
+
+<div class="card">
+
+<h2>Q9. Active & Passive Voice</h2>
+
+<p>
+Read the paragraph and rewrite it in the <b>Passive Voice</b> where possible.
+</p>
+
+<blockquote>
+The students are preparing the classroom for the annual function.
+They are decorating the walls and arranging the chairs.
+The teacher is checking their work and guiding the students.
+The school administration will announce the final schedule tomorrow.
+</blockquote>
+
+<textarea placeholder="Write your answer here..."></textarea>
+
+</div>
+
+
+<!-- Q10 -->
+
+<div class="card">
+
+<h2>Q10. Continuous Passive Voice</h2>
+
+<p>
+Change the following paragraph into the <b>Passive Voice</b> where possible.
+</p>
+
+<blockquote>
+The workers are repairing the school building.
+They are painting the classrooms and fixing the windows.
+The electricians are installing new lights.
+The school staff are preparing the rooms for the students.
+</blockquote>
+
+<textarea placeholder="Write your answer here..."></textarea>
+
+</div>
+
+
+<!-- Q11 -->
+
+<div class="card">
+
+<h2>Q11. Articles & Prepositions</h2>
+
+<p>
+Fill in the blanks with suitable <b>articles or prepositions</b>.
+</p>
+
+<blockquote>
+Ahmed went ___ school ___ Monday morning.
+He carried ___ English book ___ his bag.
+When he reached ___ classroom, he placed the book ___ his desk
+and sat ___ his friend.
+</blockquote>
+
+<input id="q11_1" placeholder="Blank 1">
+<input id="q11_2" placeholder="Blank 2">
+<input id="q11_3" placeholder="Blank 3">
+<input id="q11_4" placeholder="Blank 4">
+<input id="q11_5" placeholder="Blank 5">
+<input id="q11_6" placeholder="Blank 6">
+<input id="q11_7" placeholder="Blank 7">
+
+</div>
+
+
+<!-- Q12 -->
+
+<div class="card">
+
+<h2>Q12. Narration</h2>
+
+<p>
+Change the following paragraph into <b>Indirect Speech</b>.
+</p>
+
+<blockquote>
+Ali said, "I am preparing for my examination.
+My teacher has given me important work.
+I will complete it today."
+His friend replied, "I will help you if you need me."
+</blockquote>
+
+<textarea placeholder="Write your answer here..."></textarea>
+
+</div>
+
+
+<!-- Q13 -->
+
+<div class="card">
+
+<h2>Q13. Present Indefinite & Punctuation</h2>
+
+<p>
+Rewrite the paragraph using the correct <b>Present Indefinite forms
+and punctuation</b>.
+</p>
+
+<blockquote>
+ali go to school every day he study english and mathematics
+his teacher say that he work hard but ali always forgets his homework
+</blockquote>
+
+<textarea placeholder="Write the corrected paragraph here..."></textarea>
+
+</div>
+
+
+<!-- Q14 -->
+
+<div class="card">
+
+<h2>Q14. Reading Comprehension</h2>
+
+<h3>The Value of Leadership</h3>
+
+<p>
+A good leader does not lead people through fear.
+A true leader earns respect through courage, fairness and wise decisions.
+Throughout history, great leaders have faced difficult situations and
+remained firm in their principles. They listened to their people,
+accepted responsibility and worked for the welfare of others.
+Leadership is therefore not simply about having power; it is about using
+responsibility wisely and helping others move towards a better future.
+</p>
+
+<div class="question">
+<b>a) What qualities does a good leader possess?</b>
+<textarea></textarea>
+</div>
+
+<div class="question">
+<b>b) How does a true leader earn respect?</b>
+<textarea></textarea>
+</div>
+
+<div class="question">
+<b>c) Why is leadership not simply about having power?</b>
+<textarea></textarea>
+</div>
+
+<div class="question">
+<b>d) Find a word from the passage that means "bravery."</b>
+<input>
+</div>
+
+<div class="question">
+<b>e) Give a suitable title for the passage.</b>
+<input>
+</div>
+
+</div>
+
+
+<!-- SUBMIT -->
+
+<div class="card submit-area">
+
+<button type="button" onclick="submitExam()">
+Submit Practice Test
+</button>
+
+</div>
+
+</form>
+
+
+<!-- RESULT -->
+
+<div class="card result" id="result">
+
+<h2>Test Completed</h2>
+
+<div class="result-box">
+
+<p class="result-name" id="resultName"></p>
+
+<div class="score">
+<span id="score">0</span>
+%
+</div>
+
+<p id="resultMessage"></p>
+
+</div>
+
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})">
+Review Answers
+</button>
+
+</div>
+
+</div>
+
+
+<footer>
+English Mid-Term Practice Test 2026
+</footer>
+
+
+<script>
+
+/* ================= PROGRESS BAR ================= */
+
+window.addEventListener("scroll", function(){
+
+    const scrollTop =
+        document.documentElement.scrollTop;
+
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progress =
+        scrollHeight > 0
+        ? (scrollTop / scrollHeight) * 100
+        : 0;
+
+    document.getElementById("progress").style.width =
+        progress + "%";
+
+});
+
+
+/* ================= HELPER ================= */
+
+function normalize(text){
+
+    return text
+        .toLowerCase()
+        .trim()
+        .replace(/[.,!?;:]/g,"")
+        .replace(/\s+/g," ");
+
+}
+
+
+/* ================= SYNONYMS ================= */
+
+const synonymAnswers = {
+
+    syn1:[
+        "making",
+        "inventing",
+        "creating",
+        "devising",
+        "preparing"
+    ],
+
+    syn2:[
+        "respectfully",
+        "devoutly",
+        "solemnly"
+    ],
+
+    syn3:[
+        "defeat",
+        "outwit",
+        "trick",
+        "beat",
+        "outwit"
+    ],
+
+    syn4:[
+        "obstacle",
+        "barrier",
+        "difficulty",
+        "bar"
+    ],
+
+    syn5:[
+        "death",
+        "end",
+        "passing",
+        "loss"
+    ]
+
+};
+
+
+/* ================= SENTENCE CHECK ================= */
+
+const targetWords = {
+
+    sentence1:"concocting",
+    sentence2:"reverently",
+    sentence3:"outsmart",
+    sentence4:"hindrance",
+    sentence5:"demise"
+
+};
+
+
+function checkSentence(text, word){
+
+    const clean = normalize(text);
+
+    if(clean.length < 8){
+        return false;
+    }
+
+    const wordPattern =
+        new RegExp("\\b" + word + "\\b","i");
+
+    return wordPattern.test(clean);
+}
+
+
+/* ================= SUBMIT ================= */
+
+function submitExam(){
+
+    let objectiveCorrect = 0;
+    let objectiveTotal = 17;
+
+
+    /* ---------- SYNONYMS ---------- */
+
+    for(let i=1;i<=5;i++){
+
+        const answer =
+            normalize(
+                document.getElementById("syn"+i).value
+            );
+
+        const sentence =
+            document.getElementById("sentence"+i).value;
+
+        const feedback =
+            document.getElementById("fb"+i);
+
+        const synonymCorrect =
+            synonymAnswers["syn"+i].includes(answer);
+
+        const sentenceCorrect =
+            checkSentence(
+                sentence,
+                targetWords["sentence"+i]
+            );
+
+
+        if(synonymCorrect){
+            objectiveCorrect++;
+        }
+
+
+        if(synonymCorrect && sentenceCorrect){
+
+            feedback.className =
+                "feedback correct";
+
+            feedback.textContent =
+                "✓ Synonym is acceptable and the word is used in your sentence.";
+
+        }
+
+        else if(synonymCorrect && !sentenceCorrect){
+
+            feedback.className =
+                "feedback warning";
+
+            feedback.textContent =
+                "✓ Synonym is acceptable. Check your sentence: use the target word naturally in a complete sentence.";
+
+        }
+
+        else if(!synonymCorrect && sentenceCorrect){
+
+            feedback.className =
+                "feedback warning";
+
+            feedback.textContent =
+                "Your sentence uses the word, but check the synonym.";
+
+        }
+
+        else{
+
+            feedback.className =
+                "feedback wrong";
+
+            feedback.textContent =
+                "Check both your synonym and sentence.";
+
+        }
+
+    }
+
+
+    /* ---------- ANTONYMS ---------- */
+
+    const antonyms = {
+
+        ant1:[
+            "doubt",
+            "uncertainty",
+            "disbelief"
+        ],
+
+        ant2:[
+            "praising",
+            "praise",
+            "complimenting"
+        ],
+
+        ant3:[
+            "cowardice",
+            "fear",
+            "timidity"
+        ],
+
+        ant4:[
+            "separated",
+            "scattered",
+            "apart"
+        ],
+
+        ant5:[
+            "sad",
+            "unhappy",
+            "disappointed",
+            "depressed"
+        ]
+
+    };
+
+
+    for(let i=1;i<=5;i++){
+
+        const answer =
+            normalize(
+                document.getElementById("ant"+i).value
+            );
+
+        if(antonyms["ant"+i].includes(answer)){
+            objectiveCorrect++;
+        }
+
+    }
+
+
+    /* ---------- Q4 ---------- */
+
+    const q4Answers = [
+        "b",
+        "c",
+        "b",
+        "b",
+        "c",
+        "c",
+        "b"
+    ];
+
+
+    for(let i=1;i<=7;i++){
+
+        const selected =
+            document.querySelector(
+                'input[name="q4_'+i+'"]:checked'
+            );
+
+        if(selected &&
+           selected.value === q4Answers[i-1]){
+
+            objectiveCorrect++;
+
+        }
+
+    }
+
+
+    /* ---------- CENTRAL IDEA ---------- */
+
+    const centralIdea =
+        document.getElementById("centralIdea").value.trim();
+
+    const centralFeedback =
+        document.getElementById("centralFeedback");
+
+
+    const lineCount =
+        centralIdea === ""
+        ? 0
+        : centralIdea.split(/\r?\n/).length;
+
+
+    if(centralIdea === ""){
+
+        centralFeedback.className =
+            "feedback warning";
+
+        centralFeedback.textContent =
+            "Please write a central idea.";
+
+    }
+
+    else if(lineCount > 5){
+
+        centralFeedback.className =
+            "feedback wrong";
+
+        centralFeedback.textContent =
+            "Your central idea is more than 5 lines. Please shorten it to 5 lines or fewer.";
+
+    }
+
+    else if(centralIdea.length < 20){
+
+        centralFeedback.className =
+            "feedback warning";
+
+        centralFeedback.textContent =
+            "Your answer is very short. Write a clear central idea.";
+
+    }
+
+    else{
+
+        centralFeedback.className =
+            "feedback correct";
+
+        centralFeedback.textContent =
+            "✓ Your central idea is within the 5-line limit.";
+
+    }
+
+
+    /* ---------- RESULT ---------- */
+
+    const percentage =
+        Math.round(
+            (objectiveCorrect / objectiveTotal) * 100
+        );
+
+
+    const name =
+        document.getElementById("studentName").value.trim();
+
+
+    document.getElementById("resultName").textContent =
+        name
+        ? "Student: " + name
+        : "Student";
+
+
+    document.getElementById("score").textContent =
+        percentage;
+
+
+    document.getElementById("resultMessage").textContent =
+        "Objective questions checked: " +
+        objectiveCorrect +
+        " / " +
+        objectiveTotal +
+        ". Written answers should be reviewed carefully.";
+
+
+    const result =
+        document.getElementById("result");
+
+    result.style.display = "block";
+
+
+    result.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
+
+}
+
+
+/* ================= PREVENT ACCIDENTAL ENTER SUBMIT ================= */
+
+document
+.getElementById("examForm")
+.addEventListener("keydown", function(event){
+
+    if(event.key === "Enter" &&
+       event.target.tagName !== "TEXTAREA"){
+
+        event.preventDefault();
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
